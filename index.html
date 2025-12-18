@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101983478-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-101983478-1');
+  </script>
+  <script>
+    // ...optional GA init...
+    // window.dataLayer = window.dataLayer || [];
+    // function gtag(){dataLayer.push(arguments);}
+    // gtag('js', new Date());
+    // gtag('config', 'G-S6CVF5K3CJ');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Murad Buildings special</title>
+  <meta name="title" content="Murad Buildings special" />
+  <meta name="description" content="Murad Buildings special" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://repost.uz/murad-special/" />
+  <meta property="og:title" content="Murad Buildings special" />
+  <meta property="og:description" content="Murad Buildings special." />
+  <meta property="og:image" content="https://repost.uz/preview.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://repost.uz/murad-special/" />
+  <meta name="twitter:title" content="Murad Buildings special" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="./style.css" />
+  <script defer src="./index.js"></script>
+</head>
+
+<body>
+  <!-- Mobile drawer backdrop -->
+  <div class="drawer-backdrop" hidden></div>
+
+  <!-- Mobile drawer -->
+  <aside id="mobile-drawer" class="drawer" aria-hidden="true" aria-label="Меню">
+    <div class="drawer__top">
+      <a class="brand-badge" href="#" aria-label="Repost">
+        <img src="./assets/images/logo.svg" alt="Repost" />
+      </a>
+
+      <button class="drawer__close" type="button" aria-label="Закрыть меню">
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+
+    <nav class="drawer__nav">
+      <a href="#exclusive">Эксклюзивные материалы</a>
+      <a href="#footer">Контакты редакции</a>
+      <a href="#footer">Спецпроекты</a>
+      <a href="#footer">Реклама</a>
+    </nav>
+  </aside>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="page-container header__inner">
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span class="burger__lines" aria-hidden="true"></span>
+      </button>
+
+      <a class="brand-badge" href="#" aria-label="Repost">
+        <img src="./assets/images/logo.svg" alt="Repost" />
+      </a>
+
+      <div class="socials" aria-label="Социальные сети">
+        <a class="social" href="#" aria-label="Facebook">
+          <img src="./assets/images/icons/fb.svg" alt="" aria-hidden="true" />
+        </a>
+        <a class="social" href="#" aria-label="Instagram">
+          <img src="./assets/images/icons/ig.svg" alt="" aria-hidden="true" />
+        </a>
+        <a class="social" href="#" aria-label="Telegram">
+          <img src="./assets/images/icons/tg.svg" alt="" aria-hidden="true" />
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero" aria-label="Главный блок">
+      <div class="page-container hero__inner">
+        <div class="hero__text">
+          <h1>
+            РАЗГОВОР<br />
+            О СОВРЕМЕННОМ<br />
+            ТАШКЕНТЕ
+            <img class="hero__mark" src="./assets/images/icons/down-red.svg" alt="" aria-hidden="true" />
+          </h1>
+        </div>
+
+        <div class="hero-cta" role="note" aria-label="Описание спецпроекта">
+          <div class="hero-cta__content">
+            <img class="hero-cta__badge" src="./assets/images/icons/check.svg" alt="" aria-hidden="true" />
+            Спецпроект о честном и профессиональном диалоге, о городе и о том, каким
+            он может стать в ближайшие годы
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exclusive -->
+    <section id="exclusive" class="exclusive" aria-label="Эксклюзивные материалы">
+      <div class="page-container container-mobile">
+        <div class="exclusive__panel">
+          <div class="exclusive__cap" aria-hidden="false">
+            <h2 class="exclusive__title">Эксклюзивные материалы</h2>
+          </div>
+
+          <div id="exclusive-cards" class="cards" role="list"></div>
+
+          <div class="exclusive__actions">
+            <a id="exclusive-load-more" class="btn btn-outline" href="#">Показать больше</a>
+            <a class="btn btn-outline" target="_blank" rel="noopener noreferrer" href="https://repost.uz">Новости на
+              Repost</a>
+          </div>
+        </div>
+
+        <div class="partners" aria-label="Партнёры">
+          <img class="partners__lockup" src="./assets/images/muradxrepost.svg" alt="Murad × Repost" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer" aria-label="Подвал">
+      <div class="page-container footer__inner footer__desktop">
+
+        <img class="footer__age" src="./assets/images/icons/pg-18.svg" alt="18+" loading="lazy" />
+
+        <div class="footer__legal">
+          2017–2025 © Новости Узбекистана — Repost.uz. Использование материалов сайта Repost.uz разрешается в любом
+          объёме с обязательным указанием активной ссылки на сайт максимум во втором абзаце новости и названия с сайта
+          в виде «Repost.uz» или «Репост.уз». Учредитель: ООО «DT MEDIA CO» Адрес: г.. Ташкент, Мирзо-Улугбекский
+          район, ул.. Олимлар, дом. 43.
+        </div>
+
+        <nav class="footer__links" aria-label="Ссылки">
+          <a href="#">Реклама</a>
+          <a href="#">Спецпроекты</a>
+          <a href="#">Контакты редакции</a>
+        </nav>
+      </div>
+
+      <div class="page-container footer__inner footer__mobile">
+
+        <nav class="footer__links" aria-label="Ссылки">
+          <a href="#">Реклама</a>
+          <a href="#">Спецпроекты</a>
+          <a href="#">Контакты редакции</a>
+        </nav>
+
+        <img class="footer__age" src="./assets/images/icons/pg-18.svg" alt="18+" loading="lazy" />
+
+        <div class="footer__legal">
+          2017–2025 © Новости Узбекистана — Repost.uz. Использование материалов сайта Repost.uz разрешается в любом
+          объёме с обязательным указанием активной ссылки на сайт максимум во втором абзаце новости и названия с сайта
+          в виде «Repost.uz» или «Репост.уз». Учредитель: ООО «DT MEDIA CO» Адрес: г.. Ташкент, Мирзо-Улугбекский
+          район, ул.. Олимлар, дом. 43.
+        </div>
+
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>
