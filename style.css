@@ -94,6 +94,10 @@
   font-display: swap;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 :root {
   --bg: #f3f1ee;
   --panel: #ffffff;
@@ -196,31 +200,27 @@ a:hover {
   position: relative;
 }
 
-.burger__lines::before,
-.burger__lines::after,
 .burger__lines {
+  background: linear-gradient(#0b1a3a 0 0) center / 100% 2px no-repeat;
+}
+
+.burger__lines::before,
+.burger__lines::after {
   display: block;
   content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
   background: #0b1a3a;
   height: 2px;
   border-radius: 2px;
 }
 
 .burger__lines::before {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-}
-
-.burger__lines {
   top: 0;
 }
 
 .burger__lines::after {
-  position: absolute;
-  left: 0;
-  right: 0;
   bottom: 0;
 }
 
@@ -283,18 +283,16 @@ a:hover {
 .drawer__top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 12px;
 }
 
 .drawer__close {
+  border: none;
   width: 44px;
   height: 44px;
-  border-radius: 10px;
-  border: 1px solid rgba(12, 26, 58, .18);
   background: #fff;
   cursor: pointer;
-  font-size: 26px;
   line-height: 1;
 }
 
@@ -305,14 +303,22 @@ a:hover {
 }
 
 .drawer__nav a {
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  display: flex;
+  font-weight: 500;
   padding: 12px 10px;
-  border-radius: 12px;
-  border: 1px solid rgba(12, 26, 58, .12);
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 30px;
 }
 
-.drawer__nav a:hover {
-  text-decoration: none;
-  background: rgba(12, 26, 58, .04);
+.drawer__nav a img {
+  margin-right: 12px;
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
 }
 
 /* Hero with responsive background images */
@@ -656,7 +662,15 @@ a:hover {
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 899px) {
+  .hero__mark {
+    margin-left: 0;
+    height: 30px;
+  }
+
+  .header__inner {
+    grid-template-columns: 44px minmax(0, 1fr) 44px;
+  }
 
   .brand-badge {
     justify-self: center;
@@ -705,6 +719,11 @@ a:hover {
 
 
 @media (max-width: 768px) {
+  .hero__mark {
+    margin-left: 0;
+    height: 25px;
+  }
+
   .container-mobile {
     width: min(var(--container), 100%);
     margin-inline: auto;
@@ -749,6 +768,13 @@ a:hover {
     margin-bottom: 50px;
   }
 }
+
+@media (max-width: 500px) {
+  .hero__mark {
+    height: 20px;
+  }
+}
+
 
 
 @media (max-width: 405px) {
