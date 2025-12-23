@@ -25,36 +25,8 @@
       href: '#',
       date: '31.01.2025',
       time: '18:44',
-    },
-    {
-      title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      href: '#',
-      date: '31.01.2025',
-      time: '18:44',
-    },
-    {
-      title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      href: '#',
-      date: '31.01.2025',
-      time: '18:44',
-    },
-    {
-      title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      href: '#',
-      date: '31.01.2025',
-      time: '18:44',
-    },
-    {
-      title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      href: '#',
-      date: '31.01.2025',
-      time: '18:44',
-    },
-    {
-      title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      href: '#',
-      date: '31.01.2025',
-      time: '18:44',
+      imageUrl:
+        'https://repost.uz/storage/uploads/thumbnails/0-1766039407-farkhod-post-material-medium.webp',
     },
     {
       title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
@@ -69,37 +41,9 @@
       href: '#',
       date: '31.01.2025',
       time: '18:44',
-    },
-    {
-      title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      href: '#',
-      date: '31.01.2025',
-      time: '18:44',
-    },
-    {
-      title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      href: '#',
-      date: '31.01.2025',
-      time: '18:44',
-    },
-    {
-      title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      href: '#',
-      date: '31.01.2025',
-      time: '18:44',
-    },
-    {
-      title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      href: '#',
-      date: '31.01.2025',
-      time: '18:44',
-    },
-    {
-      title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      href: '#',
-      date: '31.01.2025',
-      time: '18:44',
-    },
+      imageUrl:
+        'https://repost.uz/storage/uploads/thumbnails/0-1766039407-farkhod-post-material-medium.webp',
+    }
   ];
 
   const INITIAL_VISIBLE_CARDS = 8;

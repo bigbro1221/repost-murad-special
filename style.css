@@ -108,7 +108,7 @@ a {
   --radius-lg: 24px;
   --radius-md: 16px;
   --radius-sm: 12px;
-  --container: 1120px;
+  --container: 1350px;
 }
 
 * {
@@ -374,7 +374,21 @@ a:hover {
   }
 }
 
-@media (min-width: 1200px) {
+@media ((min-width: 900px) and (max-width: 1249px)) {
+  .cards {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 16px;
+  }
+}
+
+
+@media ((min-width: 900px) and (max-width: 1150px)) {
+  .card__thumb {
+    height: 120px !important;
+  }
+}
+
+@media (min-width: 1250px) {
   .hero {
     background-image:
       url("./assets/images/tashkent-lg.png");
@@ -492,12 +506,14 @@ a:hover {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 14px;
-  align-items: center;
+  align-items: start;
+  align-content: start;
   padding: 12px;
   background: #fff;
 }
 
 .card__thumb {
+  display: block;
   width: auto;
   height: 150px;
   border-radius: 14px;
@@ -510,6 +526,7 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   display: block;
 }
 
@@ -663,18 +680,39 @@ a:hover {
 
 
 @media (max-width: 899px) {
-  .hero__mark {
-    margin-left: 0;
-    height: 30px;
+  .card__meta {
+    font-size: 14px;
   }
 
-  .header__inner {
-    grid-template-columns: 44px minmax(0, 1fr) 44px;
+  .card__body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 5px;
   }
+}
 
-  .brand-badge {
-    justify-self: center;
-  }
+.hero__mark {
+  margin-left: 0;
+  height: 30px;
+}
+
+.header__inner {
+  grid-template-columns: 44px minmax(0, 1fr) 44px;
+}
+
+.brand-badge {
+  justify-self: center;
+}
+
+.card__thumb {
+  height: 200px;
+}
+
+.card__title {
+  font-size: 22px;
 }
 
 @media (min-width: 900px) {
@@ -693,7 +731,7 @@ a:hover {
   }
 
   .cards {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 16px;
   }
 
@@ -705,7 +743,7 @@ a:hover {
 
   .card__thumb {
     width: 100%;
-    height: 120px;
+    height: 150px;
   }
 
 
@@ -719,6 +757,15 @@ a:hover {
 
 
 @media (max-width: 768px) {
+  .card__thumb {
+    height: 180px;
+    width: auto;
+  }
+
+  .card__title {
+    font-size: 21px;
+  }
+
   .hero__mark {
     margin-left: 0;
     height: 25px;
@@ -769,9 +816,39 @@ a:hover {
   }
 }
 
+
+
+@media (max-width: 600px) {
+  .card__thumb {
+    height: 150px;
+    width: auto;
+  }
+
+  .card__title {
+    font-size: 16px;
+  }
+
+  .card__meta {
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 500px) {
   .hero__mark {
     height: 20px;
+  }
+
+  .card__thumb {
+    width: 100%;
+    height: 150px;
+  }
+
+  .card__title {
+    font-size: 15px;
+  }
+
+  .card__meta {
+    font-size: 11px;
   }
 }
 
@@ -782,4 +859,11 @@ a:hover {
     font-size: 15px !important;
     width: 100%;
   }
+
+  .card__thumb {
+    height: 100px;
+    width: auto;
+  }
+
+
 }
